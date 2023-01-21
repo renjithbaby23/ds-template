@@ -1,18 +1,16 @@
-"""
-This is the demo code that uses hy                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      dra to access the parameters in under the directory config.
+"""This is the demo code that uses Hydra.
 
-Author: Khuyen Tran 
+Hydra is used to access the parameters in under the directory config.
 """
 
 import hydra
-from omegaconf import DictConfig
 from hydra.utils import to_absolute_path as abspath
+from omegaconf import DictConfig
 
 
 @hydra.main(version_base=None, config_path="../config", config_name="main")
 def train_model(config: DictConfig):
-    """Function to train the model"""
-
+    """Trains the model."""
     input_path = abspath(config.processed.path)
     output_path = abspath(config.final.path)
 

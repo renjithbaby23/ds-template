@@ -4,7 +4,7 @@ repos:
     hooks:
     -   id: black
         additional_dependencies: ['click==8.0.4']
--   repo: https://gitlab.com/pycqa/flake8
+-   repo: https://github.com/pycqa/flake8
     rev: 3.8.4
     hooks:
     -   id: flake8
@@ -16,14 +16,14 @@ repos:
     rev: 0.5.0
     hooks:
     -   id: nbstripout
--   repo: https://github.com/pre-commit/mirrors-mypy
-    rev: ''  # Use the sha / tag you want to point at
-    hooks:
-    -   id: mypy
-        args: [--no-strict-optional, --ignore-missing-imports]
-        additional_dependencies: [tokenize-rt==3.2.0]
 -   repo: https://github.com/PyCQA/pydocstyle
     rev: 6.1.1
     hooks:
     -   id: pydocstyle
         additional_dependencies: [toml]
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: "0b037c2b59aa62dc3be3287d175295f1a5547eb9"
+    hooks:
+    -   id: mypy
+        args: [ --no-strict-optional, --ignore-missing-imports ]
+        additional_dependencies: [ tokenize-rt==3.2.0 ]
