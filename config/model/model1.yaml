@@ -1,0 +1,8 @@
+name: model1
+params:
+  lr: 0.01
+  batch_size: 8
+  fc_layers:
+    - 128
+    - 64
+    - 32
