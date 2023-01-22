@@ -3,7 +3,7 @@ defaults:
   - model: model1
   - _self_
 
-raw: 
+raw:
   path: data/raw/sample.csv
 
 processed:
