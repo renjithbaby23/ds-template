@@ -992,14 +992,14 @@ pgp = ["gpg"]
 
 [[package]]
 name = "dvc"
-version = "2.42.0"
+version = "2.43.0"
 description = "Git for data scientists - manage your code and data together"
 category = "main"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "dvc-2.42.0-py3-none-any.whl", hash = "sha256:20b8a58241f1a12647f3a0738f0ca1a113c30b2a2eee40525c23ced03551129c"},
-    {file = "dvc-2.42.0.tar.gz", hash = "sha256:d717df1f12c90e8deda15ca10ef7d30ab2c73c9fa3151afe19690943e54b7312"},
+    {file = "dvc-2.43.0-py3-none-any.whl", hash = "sha256:bdebe575bdcfd45a00fc05db896b0c0ea38a774186034da9a75ba58541f4bf20"},
+    {file = "dvc-2.43.0.tar.gz", hash = "sha256:7a7a963b76e1733890e60a4b58242f6fe033f5ba1c9fbedcf9ff495512c3c7e9"},
 ]
 
 [package.dependencies]
@@ -1008,7 +1008,7 @@ colorama = ">=0.3.9"
 configobj = ">=5.0.6"
 distro = ">=1.3.0"
 dpath = ">=2.0.2,<3"
-dvc-data = "0.34.0"
+dvc-data = "0.35.1"
 dvc-http = "*"
 dvc-render = "0.0.17"
 dvc-studio-client = ">=0.1.1"
@@ -1019,7 +1019,6 @@ flatten-dict = ">=0.4.1,<1"
 funcy = ">=1.14"
 grandalf = ">=0.7,<1"
 hydra-core = ">=1.1.0"
-importlib-resources = {version = ">=5.2.2", markers = "python_version < \"3.9\""}
 iterative-telemetry = "0.0.6"
 networkx = ">=2.5"
 packaging = ">=19.0"
@@ -1061,21 +1060,21 @@ webhdfs-kerberos = ["dvc-webhdfs[kerberos] (==2.19.0)"]
 
 [[package]]
 name = "dvc-data"
-version = "0.34.0"
+version = "0.35.1"
 description = "dvc data"
 category = "main"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "dvc-data-0.34.0.tar.gz", hash = "sha256:d25b2132450399603fa65f7cea0e60f90b3a71cdce64eb0b287f2f81322a1442"},
-    {file = "dvc_data-0.34.0-py3-none-any.whl", hash = "sha256:6a996900dd78e7b6788074aa36d0abbcad0ccc6ab15b361024e954efb306ef33"},
+    {file = "dvc-data-0.35.1.tar.gz", hash = "sha256:490c651855286a7ff3814d982351330ea2d72fd61c9d753ff0a873c2aa682945"},
+    {file = "dvc_data-0.35.1-py3-none-any.whl", hash = "sha256:28a885314e30e93482d49b218ff0a8220c5acac6a4ebe15e13cdce2d50d97c82"},
 ]
 
 [package.dependencies]
 attrs = ">=21.3.0"
 dictdiffer = ">=0.8.1"
 diskcache = ">=5.2.1"
-dvc-objects = "0.18.1"
+dvc-objects = "0.19.0"
 funcy = ">=1.14"
 nanotime = ">=0.5.2"
 pygtrie = ">=2.3.2"
@@ -1110,14 +1109,14 @@ tests = ["dvc[testing]", "flaky (==3.7.0)", "mypy (==0.910)", "pylint (==2.15.9)
 
 [[package]]
 name = "dvc-objects"
-version = "0.18.1"
+version = "0.19.0"
 description = "dvc objects"
 category = "main"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "dvc-objects-0.18.1.tar.gz", hash = "sha256:04b0e6f10a6270eba04c7ea97a2c33fa28c93095938f9d4b211cb20938d3b34a"},
-    {file = "dvc_objects-0.18.1-py3-none-any.whl", hash = "sha256:1656d0c5d816ee06f54eb97fcb97ac9b2fd15a507e7c8a5ad2adf2d75a26a7b7"},
+    {file = "dvc-objects-0.19.0.tar.gz", hash = "sha256:6a1b0e2b5ad861b86b50f3d866e5b973cf18cd105116205d80ecd0d710dff9f1"},
+    {file = "dvc_objects-0.19.0-py3-none-any.whl", hash = "sha256:d73b27daf56fda30608f862585c69b84e9f49b3429ba76aa91ecfcf493cac7ea"},
 ]
 
 [package.dependencies]
@@ -1447,7 +1446,6 @@ files = [
 
 [package.dependencies]
 antlr4-python3-runtime = ">=4.9.0,<4.10.0"
-importlib-resources = {version = "*", markers = "python_version < \"3.9\""}
 omegaconf = ">=2.2,<2.4"
 packaging = "*"
 
@@ -1477,45 +1475,6 @@ files = [
     {file = "idna-3.4-py3-none-any.whl", hash = "sha256:90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"},
     {file = "idna-3.4.tar.gz", hash = "sha256:814f528e8dead7d329833b91c5faa87d60bf71824cd12a7530b5526063d02cb4"},
 ]
-
-[[package]]
-name = "importlib-metadata"
-version = "6.0.0"
-description = "Read metadata from Python packages"
-category = "main"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "importlib_metadata-6.0.0-py3-none-any.whl", hash = "sha256:7efb448ec9a5e313a57655d35aa54cd3e01b7e1fbcf72dce1bf06119420f5bad"},
-    {file = "importlib_metadata-6.0.0.tar.gz", hash = "sha256:e354bedeb60efa6affdcc8ae121b73544a7aa74156d047311948f6d711cd378d"},
-]
-
-[package.dependencies]
-zipp = ">=0.5"
-
-[package.extras]
-docs = ["furo", "jaraco.packaging (>=9)", "jaraco.tidelift (>=1.4)", "rst.linker (>=1.9)", "sphinx (>=3.5)", "sphinx-lint"]
-perf = ["ipython"]
-testing = ["flake8 (<5)", "flufl.flake8", "importlib-resources (>=1.3)", "packaging", "pyfakefs", "pytest (>=6)", "pytest-black (>=0.3.7)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=1.3)", "pytest-flake8", "pytest-mypy (>=0.9.1)", "pytest-perf (>=0.9.2)"]
-
-[[package]]
-name = "importlib-resources"
-version = "5.10.2"
-description = "Read resources from Python packages"
-category = "main"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "importlib_resources-5.10.2-py3-none-any.whl", hash = "sha256:7d543798b0beca10b6a01ac7cafda9f822c54db9e8376a6bf57e0cbd74d486b6"},
-    {file = "importlib_resources-5.10.2.tar.gz", hash = "sha256:e4a96c8cc0339647ff9a5e0550d9f276fc5a01ffa276012b58ec108cfd7b8484"},
-]
-
-[package.dependencies]
-zipp = {version = ">=3.1.0", markers = "python_version < \"3.10\""}
-
-[package.extras]
-docs = ["furo", "jaraco.packaging (>=9)", "jaraco.tidelift (>=1.4)", "rst.linker (>=1.9)", "sphinx (>=3.5)", "sphinx-lint"]
-testing = ["flake8 (<5)", "pytest (>=6)", "pytest-black (>=0.3.7)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=1.3)", "pytest-flake8", "pytest-mypy (>=0.9.1)"]
 
 [[package]]
 name = "iniconfig"
@@ -1716,10 +1675,8 @@ files = [
 attrs = ">=17.4.0"
 fqdn = {version = "*", optional = true, markers = "extra == \"format-nongpl\""}
 idna = {version = "*", optional = true, markers = "extra == \"format-nongpl\""}
-importlib-resources = {version = ">=1.4.0", markers = "python_version < \"3.9\""}
 isoduration = {version = "*", optional = true, markers = "extra == \"format-nongpl\""}
 jsonpointer = {version = ">1.13", optional = true, markers = "extra == \"format-nongpl\""}
-pkgutil-resolve-name = {version = ">=1.3.10", markers = "python_version < \"3.9\""}
 pyrsistent = ">=0.14.0,<0.17.0 || >0.17.0,<0.17.1 || >0.17.1,<0.17.2 || >0.17.2"
 rfc3339-validator = {version = "*", optional = true, markers = "extra == \"format-nongpl\""}
 rfc3986-validator = {version = ">0.1.0", optional = true, markers = "extra == \"format-nongpl\""}
@@ -1932,9 +1889,6 @@ files = [
     {file = "Markdown-3.4.1-py3-none-any.whl", hash = "sha256:08fb8465cffd03d10b9dd34a5c3fea908e20391a2a90b88d66362cb05beed186"},
     {file = "Markdown-3.4.1.tar.gz", hash = "sha256:3b809086bb6efad416156e00a0da66fe47618a5d6918dd688f53f40c8e4cfeff"},
 ]
-
-[package.dependencies]
-importlib-metadata = {version = ">=4.4", markers = "python_version < \"3.10\""}
 
 [package.extras]
 testing = ["coverage", "pyyaml"]
@@ -2233,7 +2187,6 @@ files = [
 beautifulsoup4 = "*"
 bleach = "*"
 defusedxml = "*"
-importlib-metadata = {version = ">=3.6", markers = "python_version < \"3.10\""}
 jinja2 = ">=3.0"
 jupyter-core = ">=4.7"
 jupyterlab-pygments = "*"
@@ -2601,7 +2554,6 @@ files = [
 
 [package.dependencies]
 numpy = [
-    {version = ">=1.20.3", markers = "python_version < \"3.10\""},
     {version = ">=1.21.0", markers = "python_version >= \"3.10\""},
     {version = ">=1.23.2", markers = "python_version >= \"3.11\""},
 ]
@@ -2692,18 +2644,6 @@ python-versions = "*"
 files = [
     {file = "pickleshare-0.7.5-py2.py3-none-any.whl", hash = "sha256:9649af414d74d4df115d5d718f82acb59c9d418196b7b4290ed47a12ce62df56"},
     {file = "pickleshare-0.7.5.tar.gz", hash = "sha256:87683d47965c1da65cdacaf31c8441d12b8044cdec9aca500cd78fc2c683afca"},
-]
-
-[[package]]
-name = "pkgutil-resolve-name"
-version = "1.3.10"
-description = "Resolve a name to an object."
-category = "main"
-optional = false
-python-versions = ">=3.6"
-files = [
-    {file = "pkgutil_resolve_name-1.3.10-py3-none-any.whl", hash = "sha256:ca27cc078d25c5ad71a9de0a7a330146c4e014c2462d9af19c6b828280649c5e"},
-    {file = "pkgutil_resolve_name-1.3.10.tar.gz", hash = "sha256:357d6c9e6a755653cfd78893817c0853af365dd51ec97f3d358a819373bbd174"},
 ]
 
 [[package]]
@@ -3311,7 +3251,6 @@ files = [
 [package.dependencies]
 markdown-it-py = ">=2.1.0,<3.0.0"
 pygments = ">=2.6.0,<3.0.0"
-typing-extensions = {version = ">=4.0.0,<5.0", markers = "python_version < \"3.9\""}
 
 [package.extras]
 jupyter = ["ipywidgets (>=7.5.1,<8.0.0)"]
@@ -3991,23 +3930,7 @@ setuptools = "*"
 [package.extras]
 test = ["zope.testing"]
 
-[[package]]
-name = "zipp"
-version = "3.11.0"
-description = "Backport of pathlib-compatible object wrapper for zip files"
-category = "main"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "zipp-3.11.0-py3-none-any.whl", hash = "sha256:83a28fcb75844b5c0cdaf5aa4003c2d728c77e05f5aeabe8e95e56727005fbaa"},
-    {file = "zipp-3.11.0.tar.gz", hash = "sha256:a7a22e05929290a67401440b39690ae6563279bced5f314609d9d03798f56766"},
-]
-
-[package.extras]
-docs = ["furo", "jaraco.packaging (>=9)", "jaraco.tidelift (>=1.4)", "rst.linker (>=1.9)", "sphinx (>=3.5)"]
-testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools", "more-itertools", "pytest (>=6)", "pytest-black (>=0.3.7)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=1.3)", "pytest-flake8", "pytest-mypy (>=0.9.1)"]
-
 [metadata]
 lock-version = "2.0"
-python-versions = "^3.8"
-content-hash = "9cb31f33952e2ba7a017e45e6b413bdfef0858201ce80b071cfa9242d39b5ae4"
+python-versions = "^3.10"
+content-hash = "7d75d4b6701cff73db0bd2f067f7eb9dc15e94d29f33889ecd5311de462398e7"
